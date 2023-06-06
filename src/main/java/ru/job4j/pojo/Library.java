@@ -19,8 +19,7 @@ public class Library {
             System.out.println(reading.getName() + " - " + reading.getPageCount());
         }
         System.out.println("After replacement:");
-        Book[] temp = new Book[1];
-        temp[0] = books[3];
+        Book[] temp = {books[3]};
         books[3] = books[0];
         books[0] = temp[0];
         for (int i = 0; i < books.length; i++) {
